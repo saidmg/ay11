@@ -56,12 +56,6 @@
         </button>
 
         <div class="w-screen flex items-center justify-center dark:bg-slate-900">
-          <!-- <div
-            @click="toggleSlideover"
-            class="cursor-pointer px-5 py-2 text-sm border text-gray-500 hover:bg-gray-100 rounded border-gray-300"
-          >
-            Toggle Slide-over
-          </div> -->
           <div id="slideover-container" class="w-full h-full fixed inset-0 invisible">
             <div
               @click="toggleSlideover"

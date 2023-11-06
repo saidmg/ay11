@@ -102,7 +102,6 @@
         </div>
         <div v-else>
           <Overview />
-          <MultiSelect />
         </div>
       </div>
     </div>

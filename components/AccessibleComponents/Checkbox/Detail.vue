@@ -13,19 +13,6 @@
       form.</span
     >
   </div>
-<!-- 
-  <p class="font-bold text-xl mb-2 text-gray-700">As a user</p>
-
-  <ul class="text-gray-700 text-base">
-    <li>I should be able to navigate by keyboard.</li>
-    <li>
-      I expect that there will be no animation in case I disabled animations from system
-      preferences.
-    </li>
-    <li>I should see a clear focus style.</li>
-    <li>In multiple checkboxes, I should hear the question or title related to them.</li>
-  </ul>
-  </div> -->
 </template>
 
 <script setup>
@@ -46,25 +33,5 @@ const toggleSlideover = (val) => {
 };
 </script>
 <style scoped>
-li {
-  list-style: square;
-}
 
-[role="listitem"] {
-  display: list-item;
-}
-
-.pretend-ul [role="listitem"] {
-  list-style: disc; /* default bullet */
-}
-
-/* a nested list should have a different glyph */
-.pretend-ul [role="listitem"] [role="listitem"] {
-  list-style: circle;
-}
-
-/* and etc. */
-.pretend-ul [role="listitem"] [role="listitem"] [role="listitem"] {
-  list-style: square;
-}
 </style>
