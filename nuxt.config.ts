@@ -1,6 +1,10 @@
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/ay11/', // baseURL: '/<repository>/'
+    buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
+  },
   devtools: { enabled: true},
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode','@nuxt/content'],
   content: {

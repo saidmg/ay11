@@ -6,7 +6,7 @@
         <nav class="accordion arrows">
           <input type="radio" name="accordion" id="cb1" />
           <section class="box">
-            <label class="box-title" for="cb1" style="width: 100%"
+            <label class="box-title dark:text-slate-900" for="cb1" style="width: 100%"
               >Guideline 1.1 Text Alternatives</label
             >
             <label class="box-close" for="acc-close"></label>
@@ -20,7 +20,7 @@
           </section>
           <input type="radio" name="accordion" id="cb2" />
           <section class="box">
-            <label class="box-title" for="cb2" style="width: 100%"
+            <label class="box-title dark:text-slate-900" for="cb2" style="width: 100%"
               >Guideline 1.4 Distinguishable</label
             >
             <label class="box-close" for="acc-close"></label>

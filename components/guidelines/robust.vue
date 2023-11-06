@@ -6,7 +6,7 @@
         <nav class="accordion arrows">
           <input type="radio" name="accordion" id="cb1" />
           <section class="box">
-            <label class="box-title" for="cb1" style="width: 100%"
+            <label class="box-title dark:text-slate-900" for="cb1" style="width: 100%"
               >Guideline 4.1 Compatible</label
             >
             <label class="box-close" for="acc-close"></label>
@@ -29,7 +29,7 @@
           </section>
           <input type="radio" name="accordion" id="cb2" />
           <section class="box">
-            <label class="box-title" for="cb2" style="width: 100%"
+            <label class="box-title dark:text-slate-900" for="cb2" style="width: 100%"
               >Guideline 4.3.8 Checking headings
             </label>
             <label class="box-close" for="acc-close"></label>
@@ -56,7 +56,7 @@
           </section>
           <input type="radio" name="accordion" id="cb3" />
           <section class="box">
-            <label class="box-title" for="cb3" style="width: 100%"
+            <label class="box-title dark:text-slate-900" for="cb3" style="width: 100%"
               >Guideline 4.3.12 Contrast ratio
             </label>
             <label class="box-close" for="acc-close"></label>
