@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.c27b6911.js";import{c as t,o}from"./entry.bfa10a5a.js";const r={};function c(n,s){return o(),t("h1",null,"ARIA Roles and Attributes")}const f=e(r,[["render",c]]);export{f as default};
