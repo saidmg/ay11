@@ -1,5 +1,4 @@
 ```html
-<template>
  <fieldset>
   <legend>Choose your interests</legend>
   <div>
@@ -13,5 +12,4 @@
     <label for="music">Music</label>
   </div>
 </fieldset>
-</template>
 ```

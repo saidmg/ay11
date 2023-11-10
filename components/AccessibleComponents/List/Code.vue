@@ -3,29 +3,6 @@
     <Title>Checkbox - Code</Title>
   </Head>
   <div class="wrapper content">
-    <nav class="tabs" style="padding-top: 0px; margin-top: 0px">
-      <div
-        class="selector"
-        style="padding-top: 0px; margin-top: 0px; text-align: center"
-      ></div>
-      <button
-        v-for="(file, index) in codeFiles"
-        :key="file"
-        class="flex flex-row space-x-1 no-underline prose-sm font-normal py-1 px-4 -mx-4"
-        style="padding-top: 0px; margin-top: 0px; display: inline-block; margin: 2px"
-        :class="{ active: codeFile == file }"
-        @click="() => (codeFile = file)"
-      >
-        <span>{{
-          file
-            .split("-")
-            .map(function (item) {
-              return item.charAt(0).toUpperCase() + item.substring(1);
-            })
-            .join(" ")
-        }}</span>
-      </button>
-    </nav>
     <NuxtErrorBoundary>
       <NuxtPage />
       <template #error="{ error }">
@@ -44,8 +21,8 @@
       </template>
     </NuxtErrorBoundary>
   </div>
-  <div v-if="codeFile">
-    <ContentDoc :path="codeFile">
+  <div >
+    <ContentDoc :path="'list-aria'">
       <template v-slot="{ doc }">
         <div style="width: 50vw">
           <!-- <h1>{{ doc.title }}</h1> -->
@@ -58,13 +35,6 @@
 </template>
 
 <script setup>
-import perceivable from "~/components/guidelines/perceivable.vue";
-import operable from "~/components/guidelines/operable.vue";
-import understandable from "~/components/guidelines/understandable.vue";
-import robust from "~/components/guidelines/robust.vue";
-import CodeBlock from "vue3-code-block";
-const codeFiles = ["checkbox-group", "checkbox", "styles"];
-const codeFile = ref(codeFiles[0]);
 </script>
 <style scoped>
 li {

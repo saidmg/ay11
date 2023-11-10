@@ -10,10 +10,6 @@ export default{
                     component:'checkbox-detail'
                 },
                 {
-                    slug:'criteria',
-                    component:'checkbox-criteria'
-                },
-                {
                     slug:'default',
                     // text:'lorem ipsum 4'
                     component:'checkbox-default'
@@ -29,85 +25,99 @@ export default{
             ]
         },
         {
-            title:'Links',
-            slug:'links',
-            number: 1,
-            options:[
-                {
-                    title:'Detail',
-                    slug:'detail',
-                    text:'Lorem Ipsum'
-                },
-                {
-                    title:'Before',
-                    slug:'before',
-                    text:'lorem ipsum 2'
-                },
-                {
-                    title:'After',
-                    slug:'after',
-                    text:'lorem ipsum 3'
-                },
-                {
-                    title:'Code',
-                    slug:'code',
-                    text:'lorem ipsum 4'
-                },
-            ]
-        },
-        {
-            title:'lists',
-            slug:'lists',
+            title:'Icon Link',
+            slug:'icon-link',
             number: 2,
             options:[
                 {
-                    title:'Detail',
                     slug:'detail',
-                    text:'Lorem Ipsum'
+                    component:'icon-link-detail'
                 },
                 {
-                    title:'Before',
-                    slug:'before',
-                    text:'lorem ipsum 2'
-                },
-                {
-                    title:'After',
-                    slug:'after',
-                    text:'lorem ipsum 3'
-                },
-                {
-                    title:'Code',
                     slug:'code',
-                    text:'lorem ipsum 4'
+                    component:'icon-link-code'
                 },
             ]
         },
         {
-            title:'Multi Select',
-            slug:'multi-select',
+            title:'Lists',
+            slug:'lists',
             number: 3,
             options:[
                 {
-                    title:'Detail',
                     slug:'detail',
-                    text:'Lorem Ipsum'
+                    component:'lists-detail'
                 },
                 {
-                    title:'Before',
-                    slug:'before',
-                    text:'lorem ipsum 2'
-                },
-                {
-                    title:'After',
-                    slug:'after',
-                    text:'lorem ipsum 3'
-                },
-                {
-                    title:'Code',
                     slug:'code',
-                    text:'lorem ipsum 4'
+                    component:'lists-code'
                 },
             ]
-        }
+        },
+        {
+            title:'Select',
+            slug:'select',
+            number: 4,
+            options:[
+                {
+                    slug:'detail',
+                    component:'select-detail'
+                },
+                {
+                    slug:'aria',
+                    component:'select-aria'
+                },
+                {
+                    slug:'code',
+                    component:'select-code'
+                },
+            ]
+        },
+        {
+            title:'Date Picker',
+            slug:'date-picker',
+            number: 4,
+            options:[
+                {
+                    slug:'detail',
+                    component:'date-picker-detail'
+                },
+                {
+                    slug:'package',
+                    component:'date-picker-package'
+                },
+            ]
+        },
+         {
+            title:'Buttons',
+            slug:'buttons',
+            number: 5,
+            options:[
+                {
+                    slug:'detail',
+                    component:'buttons-detail'
+                },
+                {
+                    slug:'aria',
+                    component:'buttons-aria'
+                },
+            ]
+        },
+        {
+            title:'Images',
+            slug:'images',
+            number: 6,
+            options:[
+                {
+                    slug:'detail',
+                    component:'images-detail'
+                },
+                {
+                    slug:'guideline',
+                    component:'images-guideline'
+                },
+            ]
+        },
+     
     ]
 }

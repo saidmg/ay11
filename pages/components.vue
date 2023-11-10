@@ -2,7 +2,7 @@
   <div>
     <div class="flex flex-row justify-center flex-grow text-black">
       <div class="prose mr-4 p-8 bg-white rounded-md flex flex-col">
-        <h3 class="mb-3 font-bold">Components</h3>
+        <!-- <h3 class="mb-3 font-bold">Components</h3> -->
 
         <div class="mb-8">
           <label
@@ -113,26 +113,7 @@ import componentsData from "~~/componentsData";
 
 const route = useRoute();
 const componentSlug = ref(route.params.componentSlug ?? "overview");
-const filteredComponentsData = ref(componentsData.components);
-
-const tabs = reactive([
-  {
-    path: `detail`,
-    title: "Detail",
-  },
-  {
-    path: `before`,
-    title: "Before",
-  },
-  {
-    path: `after`,
-    title: "After",
-  },
-  {
-    path: `code`,
-    title: "Code",
-  },
-]);
+const filteredComponentsData = ref(componentsData.components.sort((a, b) => a.slug.localeCompare(b.slug)));
 
 const filterComponentList = (searchValue) => {
   filteredComponentsData.value = componentsData.components.filter((component) => {

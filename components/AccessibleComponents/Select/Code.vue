@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Checkbox - Code</Title>
+    <Title>Select - Code</Title>
   </Head>
   <div class="wrapper content">
     <nav class="tabs" style="padding-top: 0px; margin-top: 0px">
@@ -63,7 +63,7 @@ import operable from "~/components/guidelines/operable.vue";
 import understandable from "~/components/guidelines/understandable.vue";
 import robust from "~/components/guidelines/robust.vue";
 import CodeBlock from "vue3-code-block";
-const codeFiles = ["checkbox-group", "checkbox", "styles"];
+const codeFiles = ["select", "select-js", "select-css"];
 const codeFile = ref(codeFiles[0]);
 </script>
 <style scoped>

@@ -1,0 +1,7 @@
+```html
+<div role="list">
+  <div role="listitem">List item 1</div>
+  <div role="listitem">List item 2</div>
+  <div role="listitem">List item 3</div>
+</div>
+```

@@ -32,11 +32,6 @@ const componentLoader: () => ComponentDefinition | null = () => {
         loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Checkbox/Detail.vue`),
       });
       break;
-    case "checkbox-criteria":
-      component = defineAsyncComponent({
-        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Checkbox/Criteria.vue`),
-      });
-      break;
     case "checkbox-default":
       component = defineAsyncComponent({
         loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Checkbox/DefaultCheckbox.vue`),
@@ -50,6 +45,74 @@ const componentLoader: () => ComponentDefinition | null = () => {
     case "checkbox-code":
       component = defineAsyncComponent({
         loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Checkbox/Code.vue`),
+      });
+      break;
+    
+    case "icon-link-detail":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/IconLink/Detail.vue`),
+      });
+      break;
+    case "icon-link-code":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/IconLink/Code.vue`),
+      });
+      break;
+
+     case "lists-detail":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/List/Detail.vue`),
+      });
+      break;
+    case "lists-code":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/List/Code.vue`),
+      });
+      break;
+
+    case "buttons-detail":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Button/Detail.vue`),
+      });
+      break;
+    case "buttons-aria":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Button/Aria.vue`),
+      });
+      break;
+    case "images-detail":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Image/Detail.vue`),
+      });
+      break;
+    case "images-guideline":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Image/Guideline.vue`),
+      });
+      break;
+    case "select-aria":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Select/Aria.vue`),
+      });
+      break;
+    case "select-detail":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Select/Detail.vue`),
+      });
+      break;
+    case "select-code":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Select/Code.vue`),
+      });
+      break;
+    case "date-picker-package":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/DatePicker/Package.vue`),
+      });
+      break;
+    case "date-picker-detail":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/DatePicker/Detail.vue`),
       });
       break;
   }

@@ -1,6 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+li {
+  list-style: square;
+}
+
+[role="listitem"] {
+  display: list-item;
+}
+
+.pretend-ul [role="listitem"] {
+  list-style: disc; /* default bullet */
+}
+
+/* a nested list should have a different glyph */
+.pretend-ul [role="listitem"] [role="listitem"] {
+  list-style: circle;
+}
+
+/* and etc. */
+.pretend-ul [role="listitem"] [role="listitem"] [role="listitem"] {
+  list-style: square;
+}
+
+
 .prose-container {
     background: #1e1e1e;
     position: relative;
