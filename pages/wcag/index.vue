@@ -28,7 +28,7 @@
           </li>
         </ul>
       </div>
-      <div class="px-6 pt-4 pb-2">
+      <div class="px-6 pt-4 pb-2 mb-5">
         <span class="text-gray-700 text-base mr-5">Guidelines Overview:</span>
         <button
           @click="toggleSlideover('perceivable')"

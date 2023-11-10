@@ -31,7 +31,6 @@
     const refreshItems = () => {
         let itemElements = itemElements();
         itemElements.forEach((el)=>{
-            console.log('el',el)
             el.setAttribute("role", "option")
             el.setAttribute("aria-selected", el.hasAttribute("selected"));
 

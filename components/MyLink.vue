@@ -1,8 +1,7 @@
 <template>
   <MyCustomLink :to="to">
-    <span class="text-base font-medium text-gray-500 hover:text-sky-900">
+    <span class="text-base font-medium text-gray-500 hover:text-sky-900 router-link-active">
       {{ title }}
-
   </span>
 
   </MyCustomLink>

@@ -51,8 +51,8 @@
             :to="`/components/${component.slug}/option/detail`"
             :class="{
               active:
-                `/components/${component.slug}` ===
-                `/components/${$route.params.componentSlug}`,
+                `${component.slug}` ===
+                `${$route.params.componentSlug}`,
             }"
           >
             <span>{{ component.title }}</span>
@@ -61,13 +61,15 @@
       </div>
 
       <div
-        class="prose p-12 bg-white rounded-md text-black " style="width:60vw; height:75vh;overflow:overlay"
+        class="prose bg-white rounded-md text-black shadow-lg"
+        :class="$route.params.componentSlug ? 'p-12':''"
+        style="width: 60vw; height: 75vh; overflow: overlay"
       >
         <div v-if="componentSlug != 'overview'">
           <!-- <h1 class="text-center font-bold mb-2">{{ componentSlug }}</h1> -->
           <div class="wrapper content">
             <nav class="tabs">
-              <div class="selector "></div>
+              <div class="selector"></div>
               <NuxtLink
                 v-for="(tab, index) in componentTabs($route.params.componentSlug)"
                 :key="componentSlug"
@@ -100,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div v-else>
+         <div v-else style="height:100%">
           <Overview />
         </div>
       </div>
@@ -113,7 +115,9 @@ import componentsData from "~~/componentsData";
 
 const route = useRoute();
 const componentSlug = ref(route.params.componentSlug ?? "overview");
-const filteredComponentsData = ref(componentsData.components.sort((a, b) => a.slug.localeCompare(b.slug)));
+const filteredComponentsData = ref(
+  componentsData.components.sort((a, b) => a.slug.localeCompare(b.slug))
+);
 
 const filterComponentList = (searchValue) => {
   filteredComponentsData.value = componentsData.components.filter((component) => {
@@ -127,8 +131,10 @@ const resetError = async (error) => {
 };
 
 const componentTabs = (slug) => {
-  return filteredComponentsData.value.filter((component)=> { return component.slug == slug})[0].options
-}
+  return filteredComponentsData.value.filter((component) => {
+    return component.slug == slug;
+  })[0].options;
+};
 
 onBeforeRouteUpdate((to, from, next) => {
   if (to.params.componentSlug && to.params.componentSlug != from.params.componentSlug) {
