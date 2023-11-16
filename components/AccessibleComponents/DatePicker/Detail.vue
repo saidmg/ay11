@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Checkbox - Criteria</Title>
+    <Title>Date Picker - Detail</Title>
   </Head>
   <p class="font-bold text-xl mb-2 text-gray-700">Keep in mind:</p>
   <ul class="text-gray-700 text-base">

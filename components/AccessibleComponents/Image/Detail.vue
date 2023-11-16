@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Checkbox - Criteria</Title>
+    <Title>Image - Detail</Title>
   </Head>
   <div class="m-5">
      <p class="font-bold text-xl mb-2 text-gray-700 mt-5">There is multiple types of Images:</p>

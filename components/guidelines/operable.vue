@@ -26,11 +26,6 @@
                   dialog box may not be reachable via keyboard. In such cases, the user is
                   "trapped."
                 </li>
-                <li>
-                  The example below shows a website with a clearly visible focus around
-                  the currently selected link in the list. Ideally, the focus will remain
-                  visible and will move in a logical order from one link to the next.
-                </li>
               </ul>
             </div>
           </section>
@@ -46,7 +41,7 @@
               >
               <ul class="text-gray-700 mt-5">
                 <li>
-                  In this example carousel component there is a button to stop the
+                  For example in a carousel component, have a button to stop the
                   movement, and other controls to allow users to navigate through the
                   items at their own pace:
                 </li>
@@ -88,14 +83,13 @@
                 they are</span
               >
               <ul class="text-gray-700 mt-5">
-                <li>Navigate is by using page titles</li>
+                <li>Navigating by using page titles</li>
                 <li>
                   Adding headings and labels to your content. This is about separating
                   large blocks of content, such as long text passages, into smaller ones
                   and adding headings to each. Or dividing long forms into a series of
                   smaller ones. This does not only support more effective navigation but
-                  should also make your content easier to understand and use, as we will
-                  learn later on.
+                  should also make your content easier to understand and use.
                 </li>
               </ul>
             </div>

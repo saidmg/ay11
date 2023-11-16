@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title> {{pageTitle}}</Title>
+  </Head>
   <div
     class="prose-container"
     style="
@@ -58,9 +61,11 @@
 
 <script setup lang="ts">
 import { useClipboard } from "@vueuse/core";
+const route = useRoute();
 
 const { copy, copied, text } = useClipboard();
-
+const componentSlug = route.params.componentSlug
+const pageTitle = componentSlug.charAt(0).toUpperCase() + componentSlug.slice(1)  + ' - Code'
 const props = withDefaults(
   defineProps<{
     code?: string;

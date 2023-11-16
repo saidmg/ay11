@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Checkbox - Code</Title>
+    <Title>Checkbox - Aria</Title>
   </Head>
   <div class="wrapper content">
     <nav class="tabs" style="padding-top: 0px; margin-top: 0px">
@@ -54,6 +54,26 @@
       </template>
       <template #not-found> <h1 class="text-center">Document not found</h1> </template>
     </ContentDoc>
+    <div v-show="false">
+      <ContentDoc :path="'checkbox'">
+        <template v-slot="{ doc }">
+          <div style="width: 50vw">
+            <!-- <h1>{{ doc.title }}</h1> -->
+            <ContentRenderer :value="doc" />
+          </div>
+        </template>
+        <template #not-found> <h1 class="text-center">Document not found</h1> </template>
+      </ContentDoc>
+      <ContentDoc :path="'styles'">
+        <template v-slot="{ doc }">
+          <div style="width: 50vw">
+            <!-- <h1>{{ doc.title }}</h1> -->
+            <ContentRenderer :value="doc" />
+          </div>
+        </template>
+        <template #not-found> <h1 class="text-center">Document not found</h1> </template>
+      </ContentDoc>
+    </div>
   </div>
 </template>
 

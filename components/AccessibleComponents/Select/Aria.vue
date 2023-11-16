@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Checkbox - Criteria</Title>
+    <Title>Select - Aria</Title>
   </Head>
   <div class="m-5">
     <label id="combo1-label" class="combo-label">Favorite Fruit</label>
@@ -23,6 +23,7 @@
         tabindex="-1"
       ></div>
     </div>
+    Under Construction...
   </div>
 </template>
 

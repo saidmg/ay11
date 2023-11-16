@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Checkbox - Code</Title>
+    <Title>IconLink - Code</Title>
   </Head>
   <div class="wrapper content">
     <NuxtErrorBoundary>

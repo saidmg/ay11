@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Checkbox - Criteria</Title>
+    <Title>Checkbox - Detail</Title>
   </Head>
   <div
     class="bg-blue-100 border border-blue-900 text-blue-900 px-4 py-3 rounded relative"

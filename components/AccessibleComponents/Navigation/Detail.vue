@@ -1,27 +1,30 @@
 <template>
   <Head>
-    <Title>Image - Guideline</Title>
+    <Title>Navigation - Detail</Title>
   </Head>
-  <div class="m-5">
-    <p class="font-bold text-xl mb-2 text-gray-700">Keep in mind:</p>
-    <ul class="text-gray-700 text-base">
-      <li>alt text should be less than 250 characters.</li>
-      <li>
-        Avoid using the title attribute in lieu of alt text. Keyboard-only users or mobile
-        users may never see the title.
-      </li>
-      <li>
-        Image links should describe the purpose of the link, and must never describe the
-        image.
-      </li>
-      <li>Decorative images should have blank or empty alt text</li>
-      <li>Provide color contrast and other design elements to help color blind users</li>
-      <li>
-        Complex images, like charts or graphs, should have long description located near
-        the image. The image’s alt text should describe where the close by image is.
-      </li>
-    </ul>
-  </div>
+  <p class="font-bold text-xl mb-2 text-gray-700">Best Practices:</p>
+  <ul class="text-gray-700 text-base">
+    <li>
+      Using conventional locations for menus, such as across the top of the page or along
+      the left side.
+    </li>
+    <li>Providing a visual heading to label menus.</li>
+    <li>
+      Providing generous sizes for clickable areas, generally no smaller than 44px by
+      44px.
+    </li>
+    <li>
+      Ensuring that menus are keyboard operable and focus is never hidden from users.
+    </li>
+    <li>
+      <a
+        href="https://www.w3.org/WAI/tutorials/menus/structure/#indicate-the-current-item"
+        target="_blank"
+        ><strong>Indicating the current page</strong>
+      </a>
+      using a hidden span or aria-current.
+    </li>
+  </ul>
 </template>
 
 <script setup>

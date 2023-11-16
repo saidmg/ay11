@@ -25,6 +25,30 @@ export default{
             ]
         },
         {
+            title:'Navigation',
+            slug:'navigation',
+            number: 1,
+            options:[
+                {
+                    slug:'detail',
+                    component:'navigation-detail'
+                },
+                // {
+                //     slug:'default',
+                //     // text:'lorem ipsum 4'
+                //     component:'navigation-default'
+                // },
+                {
+                    slug:'aria',
+                    component:'navigation-aria'
+                },
+                // {
+                //     slug:'aria code',
+                //     component:'navigation-code'
+                // },
+            ]
+        },
+        {
             title:'Icon Link',
             slug:'icon-link',
             number: 2,

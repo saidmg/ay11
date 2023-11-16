@@ -1,12 +1,12 @@
 <template>
-  <!-- <p v-html="option.text"></p> -->
+  <Head>
+    <Title>Components</Title>
+  </Head>
   <div v-if="option.component">
     <component :is="componentLoaderInit" />
   </div>
   <div v-else style="max-width:250px">
-   <!-- <p> -->
     {{ option.text }}
-    <!-- </p> -->
   </div>
 </template>
 
@@ -113,6 +113,18 @@ const componentLoader: () => ComponentDefinition | null = () => {
     case "date-picker-detail":
       component = defineAsyncComponent({
         loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/DatePicker/Detail.vue`),
+      });
+      break;
+
+    case "navigation-detail":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Navigation/Detail.vue`),
+      });
+      break;
+
+    case "navigation-aria":
+      component = defineAsyncComponent({
+        loader: () => /* @vite-ignore */ import(`@/components/AccessibleComponents/Navigation/Aria.vue`),
       });
       break;
   }

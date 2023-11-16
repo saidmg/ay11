@@ -1,6 +1,6 @@
 <template>
   <div class="my-5 rounded">
-    <h2 class="font-bold text-xl mb-2 text-gray-700 text-center">Perceivable</h2>
+    <h2 class="font-bold text-xl mb-2 text-gray-700 text-center dark:text-white">Understandable</h2>
     <div>
       <div class="px-1 mx-1 py-2">
         <nav class="accordion arrows">

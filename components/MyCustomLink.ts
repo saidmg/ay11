@@ -1,7 +1,7 @@
 export default defineNuxtLink({
     componentName: "MyCustomLink",
-    activeClass: "bg-gray-200 font-bold",
-    exactActiveClass: "bg-white-200 font-medium px-2",
+    activeClass: "bg-gray-200 font-bold ",
+    exactActiveClass: "bg-white-200 font-medium px-2 border-1 rounded-sm",
   });
 
 

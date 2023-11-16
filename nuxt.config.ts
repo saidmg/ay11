@@ -5,6 +5,11 @@ export default defineNuxtConfig({
     baseURL: '/ay11/', // baseURL: '/<repository>/'
     buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
   },
+  // ssr: true,
+  // components: {
+  //   global: true,
+  //   dirs: ['~/components/AccessibleComponents']
+  // },
   devtools: { enabled: true},
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode','@nuxt/content'],
   content: {

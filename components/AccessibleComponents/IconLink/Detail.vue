@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Checkbox - Criteria</Title>
+    <Title>IconLink - Detail</Title>
   </Head>
   <div class="m-5">
     <div

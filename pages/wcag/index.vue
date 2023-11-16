@@ -11,19 +11,20 @@
 
         <ul class="text-gray-700 text-base">
           <li>
-            Perceivable - Information can be presented in different ways; for example, in
-            braille, different text sizes, text-to-speech, or symbols, etc.
+            <strong> Perceivable </strong> - Information can be presented in different ways;
+            for example, in braille, different text sizes, text-to-speech, or symbols,
+            etc.
           </li>
           <li>
-            Operable - Functionality can be used in different modalities; for example,
+            <strong> Operable </strong> - Functionality can be used in different modalities; for example,
             keyboard, mouse, sip-and-puff, speech input, touch, etc.
           </li>
           <li>
-            Understandable - Information and functionality is understandable; for example
+            <strong> Understandable </strong> - Information and functionality is understandable; for example
             consistent navigation, simple language, etc.
           </li>
           <li>
-            Robust - Content can be interpreted reliably by a wide variety of browsers,
+            <strong> Robust </strong> - Content can be interpreted reliably by a wide variety of browsers,
             media players, and assistive technologies.
           </li>
         </ul>

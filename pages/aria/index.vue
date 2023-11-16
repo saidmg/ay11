@@ -1,6 +1,8 @@
 <template>
   <!-- <h1>ARIA Roles and Attributes</h1> -->
-
+  <Head>
+    <Title>Aria - Overview</Title>
+  </Head>
   <div class="content rounded">
     <div class="max-w-5xl rounded overflow-hidden shadow-lg">
       <div class="px-8 m-5 py-4">

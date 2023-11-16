@@ -54,6 +54,26 @@
       </template>
       <template #not-found> <h1 class="text-center">Document not found</h1> </template>
     </ContentDoc>
+     <div v-show="false">
+      <ContentDoc :path="'select-js'">
+        <template v-slot="{ doc }">
+          <div style="width: 50vw">
+            <!-- <h1>{{ doc.title }}</h1> -->
+            <ContentRenderer :value="doc" />
+          </div>
+        </template>
+        <template #not-found> <h1 class="text-center">Document not found</h1> </template>
+      </ContentDoc>
+      <ContentDoc :path="'select-css'">
+        <template v-slot="{ doc }">
+          <div style="width: 50vw">
+            <!-- <h1>{{ doc.title }}</h1> -->
+            <ContentRenderer :value="doc" />
+          </div>
+        </template>
+        <template #not-found> <h1 class="text-center">Document not found</h1> </template>
+      </ContentDoc>
+    </div>
   </div>
 </template>
 
